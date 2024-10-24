@@ -7,5 +7,41 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      - name: Event received
-        run: echo ${{ github.event.client_payload.message }}
+      - name: Checkout topotoolbox3
+        uses: actions/checkout@v4
+        with:
+          repository: 'TopoToolbox/topotoolbox3'
+          submodules: true
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          products: >
+            Mapping_Toolbox
+            Image_Processing_Toolbox
+            MATLAB_Coder
+      - name: Checkout main branch in snapshots
+        working-directory: tests/snapshots
+        run: git checkout main
+      - name: Download and extract latest snapshot data
+        working-directory: tests/snapshots
+        run: |
+          curl -L -o snapshot_data.tar.gz \
+          "https://github.com/TopoToolbox/snapshot_data/releases/latest/download/snapshot_data.tar.gz"
+          tar -xzf snapshot_data.tar.gz
+          rm snapshot_data.tar.gz
+      - name: Delete existing snapshot results
+        working-directory: tests/snapshots
+        run: find . -type f -name "*.tif" ! -name "dem.tif" -exec rm {} +
+      - name: Run tests to generate new snapshots
+        uses: matlab-actions/run-build@v2
+        with:
+          tasks: compile check test
+      - name: Create SHA256 file for new snapshots
+        working-directory: tests/snapshots
+        run: find . -type f - name "*.tif" | sort | xargs sha256sum -b > sha256sum.txt
+      - name: Commit new snapshots
+        working-directory: tests/snapshots
+        run: |
+          git add sha256sum.txt
+          git commit -m "[${{ github.event.client_payload.sha }}] Generate new snapshots"
+          git push origin main # This will probably fail because origin is TopoToolbox/snapshot_data
