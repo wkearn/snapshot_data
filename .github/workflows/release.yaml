@@ -61,11 +61,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          tar -czf snapshot_data.tar.gz data
           TAG="${{ github.event.client_payload.sha }}"
           gh release create $TAG -R wkearn/snapshot_data \
           --generate-notes --latest -n \
           "This is an automatically generated release of the \
-          snapshot data"
-          tar -czf snapshot_data.tar.gz data
-          gh release upload $TAG snapshot_data.tar.gz
-        
+          snapshot data" snapshot_data.tar.gz
