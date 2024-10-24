@@ -47,10 +47,13 @@ jobs:
       - name: Create SHA256 file for new snapshots
         working-directory: tests/snapshots
         run: find . -type f -name "*.tif" | sort | xargs sha256sum -b > sha256sum.txt
+      - name: Log hash of topotoolbox3 used to create snapshots
+        working-directory: tests/snapshots
+        run: echo ${{ github.event.client_payload.sha }} > source_version
       - name: Commit new snapshots
         working-directory: tests/snapshots
         run: |
-          git add sha256sum.txt
+          git add sha256sum.txt source_version
           git commit -m "[${{ github.event.client_payload.sha }}] Generate new snapshots"
           git push fork main
       - name: Make release
