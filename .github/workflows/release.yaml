@@ -6,6 +6,8 @@ on:
 jobs:
   log:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout topotoolbox3
         uses: actions/checkout@v4
@@ -38,10 +40,13 @@ jobs:
           tasks: compile check test
       - name: Create SHA256 file for new snapshots
         working-directory: tests/snapshots
-        run: find . -type f - name "*.tif" | sort | xargs sha256sum -b > sha256sum.txt
+        run: find . -type f -name "*.tif" | sort | xargs sha256sum -b > sha256sum.txt
       - name: Commit new snapshots
         working-directory: tests/snapshots
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add fork "https://github.com/wkearn/snapshot_data"
           git add sha256sum.txt
           git commit -m "[${{ github.event.client_payload.sha }}] Generate new snapshots"
-          git push origin main # This will probably fail because origin is TopoToolbox/snapshot_data
+          git push fork main
