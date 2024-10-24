@@ -1,0 +1,11 @@
+name: Generate and release snapshots
+on:
+  repository_dispatch:
+    types: [generate-snapshots]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event received
+        run: echo "Event received"
