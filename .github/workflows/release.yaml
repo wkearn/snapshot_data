@@ -57,10 +57,11 @@ jobs:
           git commit -m "[${{ github.event.client_payload.sha }}] Generate new snapshots"
           git push fork main
       - name: Make release
+        working-directory: tests/snapshots
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG="v${{ github.event.client_payload.sha }}"
+          TAG="${{ github.event.client_payload.sha }}"
           gh release create $TAG -R wkearn/snapshot_data \
           --generate-notes --latest -n \
           "This is an automatically generated release of the \
