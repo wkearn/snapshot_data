@@ -1,6 +1,10 @@
 e92f373d76ffa6b70087a7dce76dca10fa3c4ec9f7eed1e4984704fafd4dbf92 *./data/bigtujunga_30m/acv.tif
 c7dc5507a7b474bb449e09f5d82962c8f0ff9bb1e103b073a73f9f8f2038a9d3 *./data/bigtujunga_30m/auxtopo.tif
 e9a25b3471c5ba237bd621ec036d6b4986dee0290f9030d553e36505e1bc04ab *./data/bigtujunga_30m/dem.tif
+2b6492e86e5016a2dda29cea8d6824fb99934796f018d190af5d88c9db2e530f *./data/bigtujunga_30m/dilate3x3.tif
+e4d9bf2e96a675566c391d4609932bf1f3621545eb3ddee44a6331c25cdc4fd1 *./data/bigtujunga_30m/dilate_diag.tif
+233f7578a757f5bc198416618552445c001fea3820512a3f78f2147ed1cd444d *./data/bigtujunga_30m/erode3x3.tif
+be8a0bbc5a44752d62e5ade58db40f6d4e1121bcd97bb4d6453b175bea1b45f4 *./data/bigtujunga_30m/erode_diag.tif
 091a5210bd0fcd7f3d20f5730675fab089a2180e1dfe292a8e93d38f46cc6e73 *./data/bigtujunga_30m/fillsinks.tif
 28513162c70ba23e87698417285eb115eddccf209334b409d97e1841dccc7fe7 *./data/bigtujunga_30m/hillshade.tif
 8492c841f02f1820872e58f1b0291422686766f242064c4e944656deb79b06e1 *./data/bigtujunga_30m/identifyflats_closed.tif
@@ -9,6 +13,10 @@ ef1aec17accc61b16728493eda2eac2635c8d1dd737a122b6874eaec6a31c8fc *./data/bigtuju
 652e15d5abcf896da8553a99e89f79111364e64bac836b27f049372c6d5c42d1 *./data/kedarnath/acv.tif
 068433ead59da154c7e0c5e781c2a18127851aa75449933622daf2906422eeb8 *./data/kedarnath/auxtopo.tif
 55203a6cf7ae5d24060a3fb05b5bdc9d5ee637dedd7fbbec81bc96d9f5dfae55 *./data/kedarnath/dem.tif
+caf686b7370702d763823f84e6107463748f1eeace357668d11981db035486ba *./data/kedarnath/dilate3x3.tif
+49c8dd39c309770d57c2295512ed6192daae0d77d688443995a804c12acc1d63 *./data/kedarnath/dilate_diag.tif
+8413f4d971c6b0d269b90f5f2b3a71cfa7e2a37be14e81045dbd73030b10a508 *./data/kedarnath/erode3x3.tif
+7333e1b84dc9d44e4c11c776df159d15d48e8f7ccc14fe77e4abb939acfbd2fd *./data/kedarnath/erode_diag.tif
 b56f11c81137d4d76df094b0ec5a8fe884cbf603e29b5d76438e14b6ffd609db *./data/kedarnath/fillsinks.tif
 60f674be0f754a4557dfde4158abcd26fff03422c16f35af7ec3c3826e1685b7 *./data/kedarnath/hillshade.tif
 4db9dbeb637a3f3b60ee09bdc7b55402d0cf0d4690ffd865b5f6d4f166b33441 *./data/kedarnath/identifyflats_closed.tif
@@ -17,6 +25,10 @@ b56f11c81137d4d76df094b0ec5a8fe884cbf603e29b5d76438e14b6ffd609db *./data/kedarna
 be063ea8f240cd339263c2926896d95740e108cbed9af6bf3a982ef59ea4281a *./data/kunashiri/acv.tif
 855342f502cdddc05394a509eb755e7713bbb8fba3a9a9aed3e9d60fce9863d0 *./data/kunashiri/auxtopo.tif
 e2c564bb8054892c75ed269de9e7e365826702ab50b83e764d3ca95d9a8fbbb3 *./data/kunashiri/dem.tif
+3b4457d256f40ea4e737aabd9a92f87c29c6ef13766f140a66547b6af0e69378 *./data/kunashiri/dilate3x3.tif
+02818e942fff133f7b10c0b63880574d4d421eb81b672a27a1927b5b93ae2490 *./data/kunashiri/dilate_diag.tif
+b114c16c4982a741d98aa89f47c2a53237651e529f5d0de4a02af7f7b18b1278 *./data/kunashiri/erode3x3.tif
+fefe5571109255c7a3bcd65f6feede96bfd7257dfac22724e9091fcdda771ff0 *./data/kunashiri/erode_diag.tif
 34a30ccee50e001e719b60c6f5630b1a7995bc559bb302170f6e911ace7fb5f4 *./data/kunashiri/fillsinks.tif
 71b564bb2cd91cb467283e4c3a26b6eb3edb8d660e3b951538c1d01c99a46597 *./data/kunashiri/hillshade.tif
 410dad2c8e62dec4c4ba8062f1b425dce0993194b51a93e3e7e249d23bfc0667 *./data/kunashiri/identifyflats_closed.tif
@@ -25,6 +37,10 @@ bb72ad168bd267e05805b3dc5d03978ef234deaf419a34a29213b017f725b14f *./data/kunashi
 b6e4f16776f75fa9bd03eef9b0aaa404174e3bb7d6032be20f8adf20fe1e5f8c *./data/perfectworld/acv.tif
 20ec19acae3240a53f7704f9b606ab366c3b8f089107c4f271b32d67e00b6d32 *./data/perfectworld/auxtopo.tif
 ce89dc1418a99fad1b981d10adfea30043f4e10e03777cf0dcd95ce6a854712b *./data/perfectworld/dem.tif
+8777e5729068269a056defe952a7a101291b32a76b309c75710688ffe66e08dc *./data/perfectworld/dilate3x3.tif
+6e60a5a32a279da1746d24ed5a266e959a21801b17f6014538d1fdee44c8b90c *./data/perfectworld/dilate_diag.tif
+22180a9a163583c2d82b622b74fae04ec7e57ce50b7e2807ed184a40e1c6995e *./data/perfectworld/erode3x3.tif
+220540d9eb3cb3b97f223575382dbd0718d0b169523f92f550f9adf991aec6f1 *./data/perfectworld/erode_diag.tif
 1df21e1b33a52d47ef85b6cee85bfe204eca97de911d8a12399d0c96361d587a *./data/perfectworld/fillsinks.tif
 96455555039e094d2c8fad0cfddf200e5c19119fde77766ba5be107deba76973 *./data/perfectworld/hillshade.tif
 26f2f9f5f1a18c8c7f0460a766643842def6c85aeabb25ae751b51762c7ed774 *./data/perfectworld/identifyflats_closed.tif
@@ -33,6 +49,10 @@ ce89dc1418a99fad1b981d10adfea30043f4e10e03777cf0dcd95ce6a854712b *./data/perfect
 8e0542b9f14211ba13ec35a06d9e6a6897bbb9b204bfeb83c74fce75c14e0274 *./data/taalvolcano/acv.tif
 f9a43ec48f9369a440b2397d40bc36ea7f2dd16953aab9273b9484a6d5d22e94 *./data/taalvolcano/auxtopo.tif
 843a5f0ae19d569334b60cfe960e8f061fb5ed6d0c71563c943ebf6a35070ac2 *./data/taalvolcano/dem.tif
+b8b8ccd41609cef3ed53aa91e841e11531bca87057539304a334480193d37253 *./data/taalvolcano/dilate3x3.tif
+8dd758d295d6051be47a3da11ca2a19fe7979d0cb05b620744fea91703d4d9ea *./data/taalvolcano/dilate_diag.tif
+68ebc62d65d3a6a5a5f77b87826622b49e3b80a3aaa2f6cabf0d8bae8a90403e *./data/taalvolcano/erode3x3.tif
+ef44d214d6fe3e94794282e2ef81fa60c948810eb3f8570bb11b82bc81023f05 *./data/taalvolcano/erode_diag.tif
 13811c554c60d12709133fd334bd00c7636c04c2e0ac207a54fd4aae3ce1946c *./data/taalvolcano/fillsinks.tif
 d4ea211799010741667375a918fe4ed2b3281982da5903d35f0db8d4ec8bda5a *./data/taalvolcano/hillshade.tif
 7b5ca24e8748085be5e2ae79017532ca45e763cab85f017c574cf56f92365845 *./data/taalvolcano/identifyflats_closed.tif
@@ -41,6 +61,10 @@ b980c4783918e8081db8c108bed5d4e3c954059f70716d7b459e37125866ee44 *./data/taalvol
 97655babc0654ad82b5e7cb17744399d75b8c08d385b4a69985d450ecd781494 *./data/taiwan/acv.tif
 b0dcf0eacf2f2a01a9690196a345c73a8f5d65a796e1b159f16cab0e224cd019 *./data/taiwan/auxtopo.tif
 392073159ce00662cf5835a0c46f50e4642a5f2837d6357ca27bab5672d27ae9 *./data/taiwan/dem.tif
+b6d41ee82cb6651ba736913e95c3ea132122a0fa29e886dcef8cf7884fe10934 *./data/taiwan/dilate3x3.tif
+8bd4bbd8fbf6db10c4c140c68f4550839922162dd5e1b76c4803aecd490da381 *./data/taiwan/dilate_diag.tif
+9678e3a577f2c5a548a3eeba5433c805c0f32ee9a4bcc2cacf73dcc1f8d7e0f3 *./data/taiwan/erode3x3.tif
+5f9183ac89e8297e27c66f64db993c4e1b7cb6aecda8707b1e1c2068f05b5a57 *./data/taiwan/erode_diag.tif
 86c276e3daf17b2d979344c24f4b55ce8f102cf5eb703785604f5a0294aa9b34 *./data/taiwan/fillsinks.tif
 131f1bcf29b62ad8f1a45cf9619d30c928e1161361569de8b778d19116b0dd7a *./data/taiwan/hillshade.tif
 f858082708249fe72fbd0577d26918610d1970d7a452837374dd0ac869870a3f *./data/taiwan/identifyflats_closed.tif
@@ -49,6 +73,10 @@ b9c460716419dcf1e9289be8d667ebc070c01a36e862f241006c020f7f9f54e6 *./data/taiwan/
 d816e0ac80be0fb5ac7843bb400fb64d6a82de1a3dc8f9ae7ad736b7bc0367ad *./data/tibet/acv.tif
 a3c472ce7d44719ac71ffa8230752d06e4a2590e9e359f1b09ca9d2a46ea8feb *./data/tibet/auxtopo.tif
 fa24f249e7e39326f9ae755ebd810c04498c3ed30331b90686a2b88c0a9ac2a4 *./data/tibet/dem.tif
+f99034bc6d52ef1f33a26dc1f424ab0f895a26e644fd5e1b18ebdf0c4f5220f3 *./data/tibet/dilate3x3.tif
+1103749146bf37f223c5f72751b45f941bf25e8cab5583bfef2baf40b9c10205 *./data/tibet/dilate_diag.tif
+7c0a401a1269d68a17378479202c2c0d227f4e77afcc312b6b604064a97ffb4d *./data/tibet/erode3x3.tif
+0fc2cfa93bd74bf08954fe09aaf4c11a13b92fc721b479a0555cb1f7ca1525a8 *./data/tibet/erode_diag.tif
 3ea6c9c4bc8bbe6ccb421e261f75c131cdecf80302c26d16e07a5422ebfb7233 *./data/tibet/fillsinks.tif
 83b5c865f207a82e5426808528bd79cdc39ca806efb88b8eea44754fca5186f6 *./data/tibet/hillshade.tif
 fbef879ce1a58c0334b96ded892afda8285972e4fe88b1b3015bf6420a303595 *./data/tibet/identifyflats_closed.tif
